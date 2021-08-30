@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Router</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <my-view router="^/$">Home</my-view>
-    <my-view router="^/about">About</my-view>
-    <my-view router="^/contact">Contact</my-view>
-    <my-view router="^/misc">Misc</my-view>
-    <my-router></sc-router>
-    <script defer src="./my-router.js"></script>
+    <div class="a">adas</div>
+    <my-view route="^/$">Home</my-view>
+    <my-view route="^/about/(.*)">About</my-view>
+    <my-view route="^/contact/(.*)">Contact</my-view>
+    <my-view route="^/misc/(.*)">Misc</my-view>
+    <my-router></my-router>
     <script defer src="./my-view.js"></script>
+    <script defer src="./my-router.js"></script>
   </body>
 </html>

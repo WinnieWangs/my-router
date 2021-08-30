@@ -1,3 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background: orange;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+my-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+my-view.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.a {
+  font-size: 50px;
 }

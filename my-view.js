@@ -2,7 +2,7 @@
 
 class MyView extends HTMLElement {
   get route() {
-    return this.getAttribute('route');
+    return this.getAttribute('route') || null;
   }
 }
 
